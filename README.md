@@ -30,6 +30,9 @@ The goal of this project is to build a model that can generate descriptive capti
 
 # Results on Unseen Images
 
+<img src="https://github.com/danplotkin/PyTorchImageCaptionerTransformer/blob/main/results/result1.png">
+<img src="https://github.com/danplotkin/PyTorchImageCaptionerTransformer/blob/main/results/result2.png">
+<img src="https://github.com/danplotkin/PyTorchImageCaptionerTransformer/blob/main/results/result3.png">
 
 ## Key Features
 
