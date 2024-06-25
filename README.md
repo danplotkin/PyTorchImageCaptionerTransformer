@@ -28,7 +28,7 @@ The goal of this project is to build a model that can generate descriptive capti
    - Beam search is used during inference to generate multiple candidate captions and select the one with the highest probability.
    - We set beam size to 3.
 
-# Results on Unseen Images
+## Results on Unseen Images
 
 <img src="https://github.com/danplotkin/PyTorchImageCaptionerTransformer/blob/main/results/result1.png">
 <img src="https://github.com/danplotkin/PyTorchImageCaptionerTransformer/blob/main/results/result2.png">
