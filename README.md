@@ -28,6 +28,9 @@ The goal of this project is to build a model that can generate descriptive capti
    - Beam search is used during inference to generate multiple candidate captions and select the one with the highest probability.
    - We set beam size to 3.
 
+# Results on Unseen Images
+
+
 ## Key Features
 
 - **CPTR Architecture:** The model follows the CPTR architecture, which consists of:
@@ -37,7 +40,7 @@ The goal of this project is to build a model that can generate descriptive capti
    - **Fully Connected Layer:** The fully connected layer maps our decoder output to a shape of (batch_size, seq_len, vocab_size).
 
 - **Custom Dataset:** Implements a `Flickr8kDataset` class for efficient data loading and preprocessing.
-- **Training and Validation:** Provides code for training and evaluating the model on the Flickr8k dataset.
+- **Training and Validation:** Provides code for building a custom trainer to use teacher forcing during training. We then use autoregressive decoding during evaluation, using both greedy and beam search methods.
   
 ## Getting Started
 1. **Download the Flickr8k Dataset:**
