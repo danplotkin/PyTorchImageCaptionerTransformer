@@ -53,7 +53,7 @@ The goal of this project is to build a model that can generate descriptive capti
    - If using Google Colab, mount your Google Drive and store your Kaggle credentials using `google.colab.userdata`.
 
 3. **Run the Jupyter Notebook:**
-   - Open and execute the `image_captioning.ipynb` notebook to train and evaluate the model.
+   - Open and execute the `ImageCaptionerPyTorch` notebook to train and evaluate the model.
   
 ## Notebook
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/danplotkin/PyTorchImageCaptionerTransformer/blob/main/ImageCaptionerPytorch.ipynb)
