@@ -13,19 +13,20 @@ The goal of this project is to build a model that can generate descriptive capti
 
 - **Training:**
    - The model is trained using the Adam optimizer with an initial learning rate of 3e-5.
-   - A multiplicative learning rate scheduler is employed to adjust the learning rate during training.
-   - Hyperparameters are used just as they are in the paper:
-     - **Epochs**: 9
+   - A multiplicative learning rate scheduler is employed to adjust the learning rate during training for the last 10 epochs.
+   - Hyperparameters:
+     - **Epochs**: 20
      - **Batch Size**: 40
      - **Encoder Layers**: 12
      - **Decoder Layers**: 4
      - **Number of Heads**: 12
      - **Embed Dimentions**: 768
    - Masked cross-entropy Loss is used as the loss function we minimize.
+   - We use a masked accuracy function to evaluate how well the model generates the highest probability tokens during training.
 
 - **Evaluation:**
    - Beam search is used during inference to generate multiple candidate captions and select the one with the highest probability.
-   - A masked accuracy is used for my evaulation metric.
+   - We set beam size to 3.
 
 ## Key Features
 
@@ -47,6 +48,9 @@ The goal of this project is to build a model that can generate descriptive capti
 
 3. **Run the Jupyter Notebook:**
    - Open and execute the `image_captioning.ipynb` notebook to train and evaluate the model.
+  
+## Notebook
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/danplotkin/PyTorchImageCaptionerTransformer/blob/main/ImageCaptionerPytorch.ipynb)
 
 ## Acknowledgments
 
