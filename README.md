@@ -1,4 +1,4 @@
-# Image Captioning with Transformers
+# Image Captioning Transformer with PyTorch
 
 This repository contains a Jupyter Notebook that implements an image captioning model using the CPTR architecture, as described in the research paper "[CPTR: Full Transformer Network for Image Captioning
 ](https://arxiv.org/pdf/2101.10804)" by Liu et al. (2021).
